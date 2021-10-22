@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Bruno Nogueira
+      |
+      O básico sobre backtest
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.88.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Conheça a funcionalidade de backtest disponível no MetaTrader 5 para robôs/ativos.
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.813ca345b01f732a734c6c6d5838bf9ab39cb5d105f27714d099642d4445b0b6.css"
+    integrity="sha256-gTyjRbAfcypzTGxtWDi/mrOctdEF8ncU0JlkLURFsLY="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.8e4c8f0a940b1596fb4c64d28a00a5ceed671fc303cb65178b4947417da9c674.css"
+    integrity="sha256-jkyPCpQLFZb7TGTSigClzu1nH8MDy2UXi0lHQX2pxnQ="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/post/o-b%C3%A1sico-sobre-backtest/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js"
+    integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+      integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="O básico sobre backtest"/>
+<meta name="twitter:description" content="Conheça a funcionalidade de backtest disponível no MetaTrader 5 para robôs/ativos."/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "O básico sobre backtest",
+        "headline": "O básico sobre backtest",
+        "alternativeHeadline": "",
+        "description": "
+      Conheça a funcionalidade de backtest disponível no MetaTrader 5 para robôs\/ativos.
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/investindocomrobos.com.br\/post\/o-b%C3%A1sico-sobre-backtest\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Bruno Nogueira"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Bruno Nogueira"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Bruno Nogueira"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Bruno Nogueira"
+        },
+        "copyrightYear" : "2019",
+        "dateCreated": "2019-01-06T11:09:39.00Z",
+        "datePublished": "2019-01-06T11:09:39.00Z",
+        "dateModified": "2019-01-06T11:09:39.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Bruno Nogueira",
+            "url": "http://investindocomrobos.com.br/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/investindocomrobos.com.br\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/investindocomrobos.com.br\/post\/o-b%C3%A1sico-sobre-backtest\/",
+        "wordCount" : "541",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/sobre/"
+              
+              title=""
+              >Sobre</a
+            >
+          </li>
+
+        
+        
+      </div>
+      <li>
+        
+          <a class="theme-switch" title="Switch Theme">
+            <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+          </a>
+
+        
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/logo-robo.png" alt="profile picture" />
+        <h3 title=""><a href="/">Investindo com Robôs</a></h3>
+        <div class="description">
+          <p>Automação de trades usando a plataforma MetaTrader 5</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://www.youtube.com/BrunoInvest" rel="me" aria-label="YouTube">
+            <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/brunonbn/" rel="me" aria-label="Linkedin">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://twitter.com/brunon_bn" rel="me" aria-label="Twitter">
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://github.com/brunonbn" rel="me" aria-label="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Bruno Nogueira
+          2021
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer></div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+        <img class="post-thumbnail" src="/images/backtest-metatrader-5-base.png" alt="Thumbnail image" />
+
+      
+      <div class="post-title">
+        <h1>O básico sobre backtest</h1>
+        
+          <div class="info">
+            <em class="fas fa-calendar-day"></em>
+            <span class="date"
+              >
+                Sun, Jan 6, 2019
+
+
+              </span
+            >
+            <em class="fas fa-stopwatch"></em>
+            <span class="reading-time">3-minute read</span>
+          </div>
+
+        
+      </div><h2 id="backtest-no-metatrader-5">Backtest no MetaTrader 5</h2>
+<p>Como se trata de uma plataforma all in one, também exista a possibilidade de realizar um backtest no MetaTrader 5 com robôs e ativos específicos. Com isso, é possível verificar usando dados históricos reais como funcionaria a estratégia definida por você. No entanto, sempre vale lembrar que ganhos passado não são garantia de sucesso em operações futuras. É sempre importante monitorar as configurações e fazer os ajustes necessários.</p>
+<p>Para um melhor aproveitamento deste conteúdo é necessário que você saiba instalar um robô no MetaTrader. Caso tenha dúvidas, <a href="./2020-08-16-instalando-rob%C3%B4s-no-metatrader-5.md">temos um outro post publicado aqui ensinando este passo a passo</a>.</p>
+<h2 id="as-configurações">As configurações</h2>
+<p>Para acessar o recurso de teste da plataforma escolha a opção “Exibir” -&gt; “Testador de Estratégia” no menu superior. Como resultado, será aberta a janela abaixo:</p>
+<p><img src="/images/tela-teste-base.png" alt="Principais configurações do teste" title="Janela Testador de Estratégia"></p>
+<h2 id="opções">Opções</h2>
+<p>As informações relevantes para configuração do teste são:</p>
+<ol>
+<li>
+<p>Primeiramente é necessário definir se o teste é para um “Expert Advisor” (Robô) ou para um “Indicador”.</p>
+</li>
+<li>
+<p>Em seguida, no caso de ter escolhido um robô, basta selecionar qual será usado no teste. É preciso que você tenha o robô instalado no seu ambiente, como vimos em posts anteriores. O robô escolhido neste passo influencia na guia “Parâmetros de entrada”, onde você vai fazer as configurações.</p>
+</li>
+<li>
+<p>Em seguida, vamos definir que ativo será tentado.</p>
+</li>
+<li>
+<p>Além disso, temos que definir o timeframe do teste. Vamos testar com tickets a cada 15 minutos (M15), meia hora (M30), 1 hora (H1), 8 horas (H8), etc. Existem diversas opções disponíveis.</p>
+</li>
+<li>
+<p>Podemos definir também o período, considerando opções de períodos fechados (“Último mês”, “Último ano”) ou com “Período personalizado”, onde se define data de início e fim do teste.</p>
+</li>
+<li>
+<p>Opção “Para frente”, permite realizar testes avançados. Vamos falar sobre este recurso no futuro, em outros posts, por isso por enquanto basta deixar seleciona a opção padrão “Não”.</p>
+</li>
+<li>
+<p>Também é possível incluir latência nas suas ordens, para aproximar de um cenário real. Isto porque numa conta real existe uma latência entre o envio da ordem e a execução em si. De qualquer forma, vamos deixar a opção “Sem latência” selecionado.</p>
+</li>
+<li>
+<p>Use este campo para definir se o teste usará que conjunto de ticks, considerando as opções:</p>
+<ul>
+<li>
+<p>cada um dos ticks entre o maior preço e o menor preço;</p>
+</li>
+<li>
+<p>todos os ticks reais do histórico da corretora;</p>
+</li>
+<li>
+<p>os preços de abertura, fechamento, maior tick e menor tick (OHLC – Open, High, Low e Close). Está será a opção que vamos utilizar;</p>
+</li>
+<li>
+<p>apenas preços de abertura;</p>
+</li>
+<li>
+<p>cálculos matemáticos, usados para robôs específicos.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Em seguida é necessário confirmar o valor do depósito que será usado no teste e a moeda. Caso a opção de real brasileiro não esteja disponível, basta digitar “BRL”.</p>
+</li>
+<li>
+<p>Opção de otimização. Vamos deixar desabilitado por enquanto, pois será tratado no próximo vídeo.</p>
+</li>
+</ol>
+<h2 id="visualização-do-teste">Visualização do teste</h2>
+<p>Depois que forem definidos todos esses campos basta clicar no botão “Iniciar” para começar os testes. Assim sendo, será exibida uma tela abaixo, onde pode ser visto o passo a passo no gráfico, além de informações de operações que foram realizadas.</p>
+<p><img src="/images/visualiza-teste.png" alt="Visualizando o andamento do teste" title="Tela para visualização do teste"></p>
+<p>O vídeo abaixo mostra em detalhes todo o passo a passo desta configuração, além de mostrar a visualização da execução de um teste. Não deixe de assinar o canal e ativar as notificações, para ser avisado de novos conteúdos como este.</p>
+<p><a href="https://www.youtube.com/watch?v=hBFWg2fDGxI"><img src="https://img.youtube.com/vi/hBFWg2fDGxI/0.jpg" alt="Configurações do MetaTrader"></a></p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Bruno Nogueira
+          2021
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer></body>
+</html>
