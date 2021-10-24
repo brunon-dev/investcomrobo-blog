@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>https://brunonbn.github.io/investcomrobo-blog/post/</link>
+    <link>https://investindocomrobos/post/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 06 Jan 2019 11:09:39 +0000</lastBuildDate><atom:link href="https://brunonbn.github.io/investcomrobo-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jan 2019 11:09:39 +0000</lastBuildDate><atom:link href="https://investindocomrobos/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>O básico sobre backtest</title>
-      <link>https://brunonbn.github.io/investcomrobo-blog/post/o-b%C3%A1sico-sobre-backtest/</link>
+      <link>https://investindocomrobos/post/o-b%C3%A1sico-sobre-backtest/</link>
       <pubDate>Sun, 06 Jan 2019 11:09:39 +0000</pubDate>
       
-      <guid>https://brunonbn.github.io/investcomrobo-blog/post/o-b%C3%A1sico-sobre-backtest/</guid>
+      <guid>https://investindocomrobos/post/o-b%C3%A1sico-sobre-backtest/</guid>
       
         <description>Backtest no MetaTrader 5 Como se trata de uma plataforma all in one, também exista a possibilidade de realizar um backtest no MetaTrader 5 com robôs e ativos específicos. Com isso, é possível verificar usando dados históricos reais como funcionaria a estratégia definida por você. No entanto, sempre vale lembrar que ganhos passado não são garantia de sucesso em operações futuras. É sempre importante monitorar as configurações e fazer os ajustes necessários.</description>
       
@@ -20,10 +20,10 @@
     
     <item>
       <title>Instalando robôs no MetaTrader 5</title>
-      <link>https://brunonbn.github.io/investcomrobo-blog/post/instalando-rob%C3%B4s-no-metatrader-5/</link>
+      <link>https://investindocomrobos/post/instalando-rob%C3%B4s-no-metatrader-5/</link>
       <pubDate>Wed, 05 Dec 2018 09:15:34 +0000</pubDate>
       
-      <guid>https://brunonbn.github.io/investcomrobo-blog/post/instalando-rob%C3%B4s-no-metatrader-5/</guid>
+      <guid>https://investindocomrobos/post/instalando-rob%C3%B4s-no-metatrader-5/</guid>
       
         <description>Instalação de robôs no MT5 Agora que já entendemos o que é o MetaTrader, como instalar a plataforma e como fazer algumas configurações iniciais, chegou a hora de seguir instalando robôs no MetaTrader. Primeiramente vamos mostrar alguns robôs que já estão disponíveis no MT5. Mas em seguida vamos ver 2 exemplos de robôs disponíveis na internet. Assim, mostraremos como fazer download e adicionar esses robôs no nosso ambiente.
 Nos nossos exemplos vamos mostrar 2 robôs bastante conhecidos:</description>
@@ -32,10 +32,10 @@ Nos nossos exemplos vamos mostrar 2 robôs bastante conhecidos:</description>
     
     <item>
       <title>Configurações do MetaTrader</title>
-      <link>https://brunonbn.github.io/investcomrobo-blog/post/configura%C3%A7%C3%B5es-do-metatrader/</link>
+      <link>https://investindocomrobos/post/configura%C3%A7%C3%B5es-do-metatrader/</link>
       <pubDate>Wed, 21 Nov 2018 04:38:38 +0000</pubDate>
       
-      <guid>https://brunonbn.github.io/investcomrobo-blog/post/configura%C3%A7%C3%B5es-do-metatrader/</guid>
+      <guid>https://investindocomrobos/post/configura%C3%A7%C3%B5es-do-metatrader/</guid>
       
         <description>Primeiras configurações Depois da instalação da plataforma, é preciso fazer as configurações do MetaTrader para iniciar seu uso. Primeiramente é preciso entender como encontrar os ativos que quer acompanhar. Ao acessar a ferramenta pela primeira vez pode ser confuso olhar a lista de ativos na janela “Observação de Mercado”. Isto porque são exibidos muitas opções. Com o objetivo de facilitar essa visualização, você pode seguir o passo a passo abaixo:</description>
       
@@ -43,10 +43,10 @@ Nos nossos exemplos vamos mostrar 2 robôs bastante conhecidos:</description>
     
     <item>
       <title>Instalação do MetaTrader 5</title>
-      <link>https://brunonbn.github.io/investcomrobo-blog/post/instala%C3%A7%C3%A3o-do-metatrader-5/</link>
+      <link>https://investindocomrobos/post/instala%C3%A7%C3%A3o-do-metatrader-5/</link>
       <pubDate>Mon, 12 Nov 2018 12:55:24 +0000</pubDate>
       
-      <guid>https://brunonbn.github.io/investcomrobo-blog/post/instala%C3%A7%C3%A3o-do-metatrader-5/</guid>
+      <guid>https://investindocomrobos/post/instala%C3%A7%C3%A3o-do-metatrader-5/</guid>
       
         <description>Muita gente tem falado sobre robôs de investimento, mas ainda existem muitas dúvidas de como funciona e principalmente como posso dar os primeiros passos. Neste artigo vamos mostrar o passo a passo de instalação e de configuração de uma conta demo em corretora.
 Primeiros passos da instalação O primeiro passo para quem quer trabalhar com robôs investidores é a instalação do MetaTrader 5. Como mostramos no post de apresentação da plataforma, ela é uma das mais usadas no mundo.</description>
@@ -55,10 +55,10 @@ Primeiros passos da instalação O primeiro passo para quem quer trabalhar com r
     
     <item>
       <title>Conhecendo o MetaTrader</title>
-      <link>https://brunonbn.github.io/investcomrobo-blog/post/conhecendo-o-metatrader/</link>
+      <link>https://investindocomrobos/post/conhecendo-o-metatrader/</link>
       <pubDate>Sun, 11 Nov 2018 01:37:00 +0000</pubDate>
       
-      <guid>https://brunonbn.github.io/investcomrobo-blog/post/conhecendo-o-metatrader/</guid>
+      <guid>https://investindocomrobos/post/conhecendo-o-metatrader/</guid>
       
         <description>O MetaTrader é uma das principais plataformas para trading multimercado. Isso porque existem milhares de pessoas ao redor do mundo usando a ferramenta para o mercado de câmbio (Forex) e Ações. É possível usá-la para fazer análise técnica, para criação de sistemas automáticos de negociação e até para copiar transações de outros traders. Além de visualizar gráficos de preços para detectar oportunidades de compra e venda, também é possível operar de forma independente de operação humana, a partir de configurações prévias de estratégias.</description>
       
